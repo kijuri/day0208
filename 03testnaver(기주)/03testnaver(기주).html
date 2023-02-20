@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03testnaver.html</title>
+
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/naver.css">
+
+    <style>
+        .birth {
+            display: flex;
+        }
+        .verify {
+            display: flex;
+        }
+        #month{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        #verify2{
+            margin-left: 5px;
+        }
+        .policy a{
+            color: grey;
+            text-decoration: none;
+            font-size: 10px;
+        }
+        .policy a::after{
+            content: '|';
+
+        }
+        .policy a:hover{
+            color: green;
+            text-decoration: underline;
+        }
+        .naver a{
+            color: grey;
+            text-decoration: none;
+            font-size: 10px;
+        }
+        .naver a:hover{
+            color: green;
+            text-decoration: underline;
+        }
+        .small{
+            color: grey;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="member">
+        <img class="logo" src="./images/logo_naver.png" alt="">
+        <div>아이디</div>
+        <input type="text" style="text-align: right;" placeholder="@naver.com">
+
+        <div>비밀번호</div>
+        <input type="password">
+
+        <div>비밀번호 재확인</div>
+        <input type="password">
+
+        <div>이름</div>
+        <input type="text">
+
+        <div>생년월일 </div>
+        <div class="birth">
+            <input type="text" maxlength="4" placeholder="년(4자)">
+            <select name="" id="month">
+                <option value="">1월</option>
+                <option value="">2월</option>
+                <option value="">3월</option>
+                <option value="">4월</option>
+                <option value="">5월</option>
+                <option value="">6월</option>
+                <option value="">7월</option>
+                <option value="">8월</option>
+                <option value="">9월</option>
+                <option value="">10월</option>
+                <option value="">11월</option>
+                <option value="">12월</option>
+            </select>
+            <input type="number" max="31" min="1" placeholder="일">
+        </div>
+        <div>성별</div>
+        <select name="" id="">
+            <option value="" sleceted>성별</option>
+            <option value="">남자</option>
+            <option value="">여자</option>
+            <option value="">선택안함</option>
+        </select>
+        <div>본인 확인 이메일 <small class="small">(선택)</small></div>
+        <input type="email">
+        <div>휴대전화</div>
+        <select name="" id="">
+            <option value="" sleceted>대한민국 +82</option>
+        </select>
+        <div class="verify">
+            <input type="text" maxlength="11" placeholder="전화번호 입력">
+            <input type="button" id="verify2" value="인증번호 받기">
+        </div>
+            <input type="text" maxlength="11" placeholder="인증번호 입력하기">
+        <div class="join">
+            <input type="button" value="가입하기">
+        </div>
+
+        <div class="policy" style="text-align: center;">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">책임의 한계와 법적고지</a>
+            <a href="#">회원정보 고객센터</a>
+        </div>
+        <div class="naver" style="text-align: center;">
+            <a href="#">ⓒNAVER Corp</a>
+        </div>
+
+        <!--<h2>03testnaver.html 각자 table,div,span</h2>-->
+        <!--<h2>03testnaver.html 가입화면 하단영역</h2>-->
+
+
+    </div>
+
+</body>
+
+</html>
